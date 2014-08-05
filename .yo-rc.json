@@ -1,0 +1,10 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Git, Github & the Terminal, oh my!",
+    "packageVersion": "0.0.1",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "kroysemaj",
+    "githubRepository": "git-GDI"
+  }
+}
