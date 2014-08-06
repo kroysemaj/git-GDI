@@ -7,5 +7,5 @@
 - Learn the basic commands to get you functional with git <!-- .element: class="fragment" data-fragment-index="4" -->
 - Have a grand old time and learn a bunch of stuff! <!-- .element: class="fragment" data-fragment-index="5" -->
 
-![alt text](http://www.reactiongifs.com/r/vhpy.gif) <!-- .element: class="fragment" data-fragment-index="6" -->
+![alt text](images/happy.gif) <!-- .element: class="fragment" data-fragment-index="6" -->
 ####(Expect lots of gifs) <!-- .element: class="fragment" data-fragment-index="7" -->
