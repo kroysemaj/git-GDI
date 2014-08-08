@@ -1,4 +1,4 @@
-##  Consider This: Consider Harder
+##  Consider This II: Consider More Harder
 
 - You're working on a project <!-- .element: class="fragment" data-fragment-index="1" -->
 - Saving early and often <!-- .element: class="fragment" data-fragment-index="2" -->
