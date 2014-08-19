@@ -2,4 +2,4 @@
 ---
 First things first:
 
-```git !== github```
+`git !== github`

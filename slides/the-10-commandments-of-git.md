@@ -1,7 +1,7 @@
-##  The ~~10~~ 11 Command(ment)s of git
+##  The ~~10~~ ~~11~~ 12 Commands of git
 
-1. `git init`
-2. `git clone`
+1. `git clone`
+2. `git init`
 3. `git status`
 4. `git add`
 5. `git commit -m`

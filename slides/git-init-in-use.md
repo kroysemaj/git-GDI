@@ -1,12 +1,8 @@
 ##  git init in use
 
-To use git init:
+To create a new git repo. Run this command in the same folder from which you deleted `.git`
 
-- `cd` to the root folder of a project you'd like to make into a repo
-- then just type
+<br>
 
 `$ git init`
 
-![alt text](images/gitinit.png)
-
-We aren't doing this today but this is how'd you'd start a new git project from scratch
