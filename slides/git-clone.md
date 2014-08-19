@@ -1,3 +1,4 @@
+#### `[new command]`
 ##  git clone
 
 Copies a remote repository to your machine.

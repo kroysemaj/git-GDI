@@ -1,4 +1,4 @@
-##  The ~~10~~ ~~11~~ 12 Commands of git
+##  The ~~10~~ 11 Commands of git
 
 1. `git clone`
 2. `git init`

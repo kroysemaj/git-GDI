@@ -1,3 +1,4 @@
+#### `[new command]`
 ##  git init
 
 ![alt text](images/gitinit.gif)
