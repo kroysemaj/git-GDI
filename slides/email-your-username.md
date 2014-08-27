@@ -3,4 +3,4 @@
 Email your username to me at this email address:
 ```james@testdrivenme.co```
 
-(we will be using it later)
+(I will be using it to check in on your work)

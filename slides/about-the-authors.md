@@ -2,12 +2,15 @@
 
 *James York*
 
-- @kroysemaj
-- kroysemaj@gmail.com
+- twitter: @kroysemaj
+- email: kroysemaj@gmail.com
+- github: kroysemaj
+- other: you get the idea...
 
 <br>
 
 *Chris DeMars*
 
-- @saltnburnem
-- cdemars86@gmail.com
+- twitter: @saltnburnem
+- email: cdemars86@gmail.com
+- github: saltnburnem

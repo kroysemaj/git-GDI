@@ -6,4 +6,4 @@ Version control (also sometimes known as source control) is a system that manage
 
 Documents? You mean I can use this with any file or collection of files like Word docs or image assets? <!-- .element: class="fragment" data-fragment-index="1" -->
 
-(yes) <!-- .element: class="fragment" data-fragment-index="2" -->
+![](images/totes-mcgotes.gif) <!-- .element: class="fragment" data-fragment-index="2" -->

@@ -6,13 +6,7 @@ We're going to remove the `.git` folder to demonstrate how to create a git repo 
 
 First we have to get rid of that pesky `.git` folder. Easy peasy!
 
-<br>
-
 ```bash
-$ ls -al #shows all folders and files, even hidden
-$ rm -rf .git #removes .git and all its contents
+$ ls #shows the contents of the current directory
 ```
-
-<br>
-
-Your terminal might have changed a little when you did that. It's okay it just means it worked.
+Oops, there is no `.git` folder. Yes there is it's just hiding. files and folders with a dot in front of them (dot files) are usually hidden by an OS.
