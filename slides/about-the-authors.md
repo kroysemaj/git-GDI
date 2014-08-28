@@ -13,4 +13,4 @@
 
 - twitter: @saltnburnem
 - email: cdemars86@gmail.com
-- github: saltnburnem
+- github: chrisdemars
