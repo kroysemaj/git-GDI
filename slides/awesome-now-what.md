@@ -1,6 +1,6 @@
 ##  Awesome, now what
 
-So now you know the absolute basics of what you need to manage a repo that lives solely on your computer. Unfornately, sometimes bad things happen to your computer.
+So now you know the absolute basics of what you need to manage a repo that lives solely on your computer. Unfortunately, sometimes bad things happen to your computer.
 
 <br>
 

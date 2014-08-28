@@ -1,6 +1,6 @@
 ##  Version Control Defined
 
-Version control (also sometimes known as source control) is a system that manages changes to a program, website, or other collection of documents
+Version control (also sometimes known as source control) is a system that manages changes to a program, website, or other collection of documents.
 
 ----
 
