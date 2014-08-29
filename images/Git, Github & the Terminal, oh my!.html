@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:9000/#/39 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+
+        <title>Git, Github &amp; the Terminal, oh my!</title>
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="http://localhost:9000/bower_components/reveal.js/css/reveal.min.css">
+
+        <link rel="stylesheet" href="http://localhost:9000/bower_components/reveal.js/css/theme/default.css" id="theme">
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="http://localhost:9000/css/main.css">
+
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="http://localhost:9000/bower_components/reveal.js/lib/css/zenburn.css" id="highlight-theme">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+          if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'bower_components/reveal.js/css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    <script type="text/javascript" src="chrome-extension://aadgmnobpdmgmigaicncghmmoeflnamj/ng-inspector.js"></script></head>
+
+    <body style="transition: -webkit-transform 0.8s ease; -webkit-transition: -webkit-transform 0.8s ease;">
+
+        <div class="reveal default center" data-transition-speed="default" data-background-transition="default">
+
+            <div class="slides" style="width: 960px; height: 700px; zoom: 0.439714285714286;">
+
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -295px; display: none;" hidden=""><h1>Git, Github &amp; the Terminal, oh my!</h1>
+<h2>An afternoon jaunt down Version Control Lane</h2>
+<hr>
+<h3>by James York and Chris DeMars</h3>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -303px; display: none;" hidden=""><h2>about the authors</h2>
+<p><em>James York</em></p>
+<ul>
+<li>twitter: @kroysemaj</li>
+<li>email: kroysemaj@gmail.com</li>
+<li>github: kroysemaj</li>
+<li>other: you get the idea...</li>
+</ul>
+<p><br></p>
+<p><em>Chris DeMars</em></p>
+<ul>
+<li>twitter: @saltnburnem</li>
+<li>email: cdemars86@gmail.com</li>
+<li>github: chrisdemars</li>
+</ul>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -188.5px; display: none;" hidden=""><h2>My Helper Slide</h2>
+<p>From the terminal, pop in:</p>
+<p>  <code>yo reveal:slide "Slide Title"</code></p>
+<p>Available options:</p>
+<p>  <code>--markdown --attributes --notes</code></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -350px; display: none;" hidden=""><h2>Goals for this Talk</h2>
+<ul>
+<li>Introduce you to the broad concept of version control</li>
+<li class="fragment visible" data-fragment-index="0">Install git on every machine here <!-- --></li>
+<li class="fragment visible" data-fragment-index="1">Remove any fears you have about working with the terminal <!-- --></li>
+<li class="fragment visible" data-fragment-index="2">Set up a basic github profile <!-- --></li>
+<li class="fragment visible" data-fragment-index="3">Learn the basic commands to get you functional with git <!-- --></li>
+<li class="fragment visible" data-fragment-index="4">Have a grand old time and learn a bunch of stuff! <!-- --></li>
+</ul>
+<p><img src="./Git, Github & the Terminal, oh my!_files/happy.gif" alt="alt text" class="fragment visible" data-fragment-index="5"> <!-- --></p>
+<h4 class="fragment visible" data-fragment-index="6">(Expect lots of gifs) <!-- --></h4>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -161px; display: none;" hidden=""><h2>First things first</h2>
+<p>Let's demystify the command line</p>
+<p><br></p>
+<p class="fragment visible" data-fragment-index="0">(It's not as scary as you think) <!-- --></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -204px; display: none;" hidden=""><h2>The Command Line Interface</h2>
+<p>From Wikipedia</p>
+<blockquote>
+<p>The command line interface (CLI or Terminal) is a means of interacting with a computer program where the user issues commands to the
+program in the form of successive lines of text (commands).</p>
+</blockquote>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -295px; display: none;" hidden=""><h2>cli intro</h2>
+<p>The command line is just another way to interact with your computer and give it commands like the mouse and the graphical user interface (GUI) that you're probably used to.</p>
+<p><br></p>
+<p>CLI commands look a little funny at first. But you get used to them pretty quickly.
+Most are some kind of extreme abbreviation of whatever task you want the computer to do.</p>
+<p><br></p>
+<p>ex. Change directory is <code>cd</code></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -301px; display: none;" hidden=""><h2>Yer Hardcore now</h2>
+<p>This was the way folks used computers for a long, long time. It still works great. I use the command line for almost everything now.</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/badass.gif" alt="alt text"></p>
+<p>This is how the pros work. We're all pros so this is how we'll work.</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -320px; display: none;" hidden=""><h2>Some necessary commands</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>change directory</td>
+<td><code>cd</code></td>
+</tr>
+<tr>
+<td>go up a directory level</td>
+<td><code>cd ..</code></td>
+</tr>
+<tr>
+<td>list folder contents</td>
+<td><code>ls</code></td>
+</tr>
+<tr>
+<td>list all folder contents</td>
+<td><code>ls -a</code></td>
+</tr>
+<tr>
+<td>list all folder contents in list form</td>
+<td><code>ls -al</code></td>
+</tr>
+<tr>
+<td>print working directory</td>
+<td><code>pwd</code></td>
+</tr>
+<tr>
+<td>create a file</td>
+<td><code>touch &lt;filename&gt;</code></td>
+</tr>
+<tr>
+<td>make a directory</td>
+<td><code>mkdir &lt;directory name&gt;</code></td>
+</tr>
+<tr>
+<td>remove a file or folder</td>
+<td><code>rm [-r]</code> (if removing a folder)</td>
+</tr>
+<tr>
+<td>go through command history</td>
+<td>up arrow key</td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -293px; display: none;" hidden=""><h2>CLI Caveat</h2>
+<h3>Windows Users beware!</h3>
+<p>These commands are all for Unix / Linux and OSX</p>
+<p><br></p>
+<p>A lot of these will work in a Windows terminal but not all.</p>
+<p><br></p>
+<p>But fear not!</p>
+<p>When we start working with git later, we will use an alternate terminal for Windows that will allow all these Unix commands.</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -240.5px; display: none;" hidden=""><h2>Version Control</h2>
+<p>What is it?</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/shrug.jpg" alt="alt text"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -350px; display: none;" hidden=""><h2>Version Control Defined</h2>
+<p>Version control (also sometimes known as source control) is a system that manages changes to a program, website, or other collection of documents.</p>
+<hr>
+<p class="fragment visible" data-fragment-index="0">Documents? You mean I can use this with any file or collection of files like Word docs or image assets? <!-- --></p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/totes-mcgotes.gif" alt="" class="fragment visible" data-fragment-index="1"> <!-- --></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -151px; display: none;" hidden=""><h2>Version Control Purposes</h2>
+<p>Version Control solves two problems for a team of developers</p>
+<ul>
+<li class="fragment visible" data-fragment-index="0">Collaboration <!-- --></li>
+<li class="fragment visible" data-fragment-index="1">Tracking and Reverting changes <!-- --></li>
+</ul>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -314.5px; display: none;" hidden=""><h2>Collaboration</h2>
+<p>Version control allows you to work on the same project simultaneously with other people, and helps you to avoid and manage conflicting changes</p>
+<h4 class="fragment visible" data-fragment-index="0">(In plain English, Version Control keeps you from murdering your teammates) <!-- --></h4>
+<p><img src="./Git, Github & the Terminal, oh my!_files/murder.gif" alt="alt text" class="fragment visible" data-fragment-index="1"> <!-- --></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/consider-this.html" class="past" style="top: -318px; display: none;" hidden=""><h2>Consider This</h2>
+
+<div class="inline-block fragment visible" data-fragment-index="0">
+  <p>My changes</p>
+
+  <img src="./Git, Github & the Terminal, oh my!_files/mychanges.png" width="400">
+</div>
+<div class="inline-block fragment visible" data-fragment-index="1">
+  <p>Your changes</p>
+
+  <img src="./Git, Github & the Terminal, oh my!_files/yourchanges.png" width="350">
+</div>
+
+<p class="fragment visible" data-fragment-index="2">Who wins?</p>
+<p class="fragment visible" data-fragment-index="3">(whoever saves last)</p></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -178px; display: none;" hidden=""><p><img src="./Git, Github & the Terminal, oh my!_files/murder.gif" alt="alt text"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -274.5px; display: none;" hidden=""><h2>Who cares?</h2>
+<p>I work as a freelancer or am not on a team. What can version control do for me? ..lately</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/Janet_MsJackson.gif" alt="alt text"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -151px; display: none;" hidden=""><h2>Tracking &amp; Reverting Changes</h2>
+<p>Version control systems allow easy viewing of previous changes, and makes it easy to undo a change set or revert documents back to a previous state</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -228px; display: none;" hidden=""><h2>Consider This II: Consider More Harder</h2>
+<ul>
+<li class="fragment visible" data-fragment-index="0">You're working on a project <!-- --></li>
+<li class="fragment visible" data-fragment-index="1">Saving early and often <!-- --></li>
+<li class="fragment visible" data-fragment-index="2">Everything is great <!-- --></li>
+<li class="fragment visible" data-fragment-index="3">Then while you're saving your computer crashes <!-- --></li>
+<li class="fragment visible" data-fragment-index="4">When you reload you find your entire project was corrupted and the project is not salvageable <!-- --></li>
+<li class="fragment visible" data-fragment-index="5">... <!-- --></li>
+</ul>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -178px; display: none;" hidden=""><p><img src="./Git, Github & the Terminal, oh my!_files/murder.gif" alt="alt text"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -253px; display: none;" hidden=""><h2>If only</h2>
+<p>there was a kind of 'Save Button on Steroids' that could save a project's state at various points and serve as a reliable backup...</p>
+<p><br></p>
+<p>Without needing to maintain multiple copies of the project in various places.</p>
+<p><br></p>
+<p class="fragment visible" data-fragment-index="0">Guess what, there is! <!-- --></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -191.5px; display: none;" hidden=""><h2>Version Control!</h2>
+<p><img src="./Git, Github & the Terminal, oh my!_files/tada.gif" alt="alt text"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -151px; display: none;" hidden=""><h2>Types of Version Control</h2>
+<p>There are two major types of version control</p>
+<ul>
+<li>Centralized</li>
+<li>Distributed</li>
+</ul>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -293px; display: none;" hidden=""><h2>Centralized</h2>
+<p>Centralized version control systems are run on one central server, and each collaborator checks out the code from and merges changes into the main server</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/monolith.gif" alt="alt text"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -311px; display: none;" hidden=""><h2>Distributed</h2>
+<p>Distributed version control systems allow each collaborator to maintain a separate repository of the code, which can be periodically reconciled with the main server</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/agent-smith.jpg" alt="alt text"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -147.5px; display: none;" hidden=""><h2>git &amp; github</h2>
+<hr>
+<p>First things first:</p>
+<p><code>git !== github</code></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -110px; display: none;" hidden=""><h2>git defined</h2>
+<p>Git is an open source distributed source control tool.</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -130.5px; display: none;" hidden=""><h2>github defined</h2>
+<p>Github is a social coding website for managing software projects that use git as their source control</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -216.5px; display: none;" hidden=""><h2>Make a github profile</h2>
+<p>If you haven't already, go to github.com and create a new account</p>
+<p>It works the same as making an account for any other service</p>
+<ul>
+<li>sign up</li>
+<li>pick a username</li>
+<li>set a password</li>
+<li>verify your email</li>
+</ul>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -156.5px; display: none;" hidden=""><h2>email me your username</h2>
+<p>Email your username to me at this email address:
+<code>james@testdrivenme.co</code></p>
+<p>(I will be using it to check in on your work)</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -268px; display: none;" hidden=""><h2>download git</h2>
+<p>If you haven't already, go to</p>
+<p><code>git-scm.com/download</code></p>
+<p>choose your platform and install git</p>
+<p><br></p>
+<h3>NOTE!</h3>
+<p>If you are running an older version of Mac OSX (10.6 or lower) this won't work. Raise your hand and we'll try to figure out an alternative.</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -151px; display: none;" hidden=""><h2>test git</h2>
+<p>Find your command prompt</p>
+<ul>
+<li>Terminal in Mac OS</li>
+<li>Git Bash in Windows</li>
+</ul>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -278px; display: none;" hidden=""><h2>lets take a break!</h2>
+<p><img src="./Git, Github & the Terminal, oh my!_files/lobby.gif" width="450"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -290.5px; display: none;" hidden=""><h2>Play along at home</h2>
+<p>From here on I will be spoon-feeding you terminal commands</p>
+<p>When I do, they will look like this:</p>
+<p>(The dollar sign ($) is your terminal's prompt. You don't need to type that. That's just a convention.)</p>
+<pre><code class="bash">$ <span class="built_in">type</span> this into your terminal exactly
+$ also this</code></pre>
+<p><br></p>
+<p>When I give you more than one command, you will enter each command and press enter at the end of each line</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -232.5px; display: none;" hidden=""><h2>git version</h2>
+<p>To make sure you have git properly installed, run this command in your terminal:</p>
+<p><code>$ git --version</code></p>
+<p>If you don’t get an error, you’re good</p>
+<p><br></p>
+<p>If you <em>do</em> get an error, raise your hand</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/configure-git.html" class="past" style="top: -209px; display: none;" hidden=""><h2>configure git</h2>
+
+<p>First let's set some config options for git</p>
+<p>These will tell git what details to use on the commits we make.</p>
+<br>
+<p class="terminal"><code>$ git config --global user.name "Your Name"</code></p>
+<p class="terminal"><code>$ git config --global user.email "Your Email"</code></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -186px; display: block;" hidden=""><h2>Pair Up!</h2>
+<h3>(optional)</h3>
+<p>If you don't have a working laptop, see if a neighbor will let you sit in with them. Talk is cheap and it's important to get your hands dirty with this stuff.</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -145px; display: block;" hidden=""><h2>Some Terms</h2>
+<ul>
+<li>repository (repo) — a self-contained codebase or project</li>
+<li>local - on your computer</li>
+<li>remote - on the internet</li>
+</ul>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="past" style="top: -212px; display: block;" hidden=""><h2>git basics</h2>
+<ol>
+<li>Create a repo - <code>git init</code></li>
+<li>Check status - <code>git status</code></li>
+<li>Make some changes</li>
+<li>Staging changes - <code>git add</code></li>
+<li>Staging vs. committing</li>
+<li>Committing changes - <code>git commit -m</code></li>
+</ol>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" class="present" style="top: -350px; display: block;"><h2>creating a new repo</h2>
+<p>Now that we are ready to start using git, we need a project to use it on. We wil create all the files and folders we need using the command line.</p>
+<p><br></p>
+<p class="fragment visible" data-fragment-index="0">This is exactly the procedure you would go through to create a new repo from scratch on a new project. <!-- --></p>
+<p><br></p>
+<p class="fragment visible" data-fragment-index="1">Choose a directory where you would like to keep all your work from today. (Here's a suggestion, Documents/) <!-- --></p>
+<pre class="fragment visible" data-fragment-index="1"><code class="bash"><span class="built_in">cd</span> Documents</code></pre>
+<!-- -->
+
+<p><br></p>
+<p class="fragment visible current-fragment" data-fragment-index="2">Now create a new directory to house our repo. <!-- --></p>
+<pre class="fragment visible current-fragment" data-fragment-index="2"><code class="bash">mkdir gdi-git-class</code></pre>
+<!-- --></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -307.5px; display: block;"><h2>creating a new repo</h2>
+<p>Now we need to change our directory into the new folder we created</p>
+<pre><code class="bash"><span class="built_in">cd</span> gdi-git-class</code></pre>
+<blockquote>
+<p>ProTip: Once you type 'gdi-' hit tab and your console should finish the rest for you. Magic!!</p>
+</blockquote>
+<p><br></p>
+<p class="fragment" data-fragment-index="0">Now we have a folder for our project but no project, let's create a file that will be our project. We'll make a website. The first thing we need is an index page. <!-- --></p>
+<pre class="fragment" data-fragment-index="0"><code class="bash">touch index.html</code></pre>
+<!-- -->
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -350px; display: block;"><h4><code>[new command]</code></h4>
+<h2>git init</h2>
+<p><img src="./Git, Github & the Terminal, oh my!_files/gitinit.gif" alt="alt text"></p>
+<p>Creates a new git repository in the current folder including ALL child folders</p>
+<blockquote>
+<p>ProTip: Do NOT run in your root folder.</p>
+</blockquote>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -182.5px; display: block;"><h2>git init in use</h2>
+<p>To create a new git repo. Run this command in the root directory of your project</p>
+<p><br></p>
+<pre><code class="bash">$ git init</code></pre>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>Congrats! Its a repo!</h2>
+<p>So now you have a brand new infantile repository. With nothing in it.</p>
+<p><br></p>
+<p>Time to add some stuff to our new repo and add it to github.</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h4><code>[new command]</code></h4>
+<h2>git status</h2>
+<p>Reports the current status of the repo, such as whether any files have been modified or new files have been created</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/spying-cat.gif" alt="alt text"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>using git status</h2>
+<p>You can check the status of your repo to see that git can see all the files in the project but they are not being currently tracked.</p>
+<p><br></p>
+<p><code>$ git status</code></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>git status demo</h2>
+<p>You should get a listing of any untracked files in the repo. Right now none of your files are tracked so you should get a list that includes all of the files in the repo. If you don't get something that looks like this, raise your hand:</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/gitstatus.png" alt="alt text"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h4><code>[new command]</code></h4>
+<h2>git add</h2>
+<p>Adds an untracked file to the repo, OR adds a tracked and changed file to the staging area, making it ready to be committed.</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/lucyAdd.jpg" alt="Lucy in the Chocolate Factory"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>staging area?</h2>
+<p>There are basically 4 states in which a file in a repo can exist.</p>
+<ul>
+<li>Untracked (not included in the repo)</li>
+<li>Tracked</li>
+<li>Tracked and changed</li>
+<li>Tracked, changed, and staged</li>
+</ul>
+<p><img src="./Git, Github & the Terminal, oh my!_files/staging.png" alt="" width="600"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>using git add</h2>
+<p>To add a new file to your git repo, you would
+use the command</p>
+<p><code>git add &lt; filepath &gt;</code></p>
+<p><br></p>
+<pre><code class="bash">$ git add index.html</code></pre>
+<p><br></p>
+<p>If you check your status again you should see that the file is now being tracked and is ready to be committed.</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h4>Exercise Time!</h4>
+<h2>Now do it all again!</h2>
+<ol>
+<li>Create a new folder on the same level in your</li>
+<li>Reinitialize  git in your project using <code>git init</code></li>
+</ol>
+<p><br></p>
+<ul>
+<li><p>Bonus: Do it all from the terminal</p>
+</li>
+<li><p>Double Bonus: Do it a couple of more times. Practice makes perfect.</p>
+</li>
+</ul>
+<p><br></p>
+<p>Don't be a hero! If you get get stuck, ask for help!</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/need-help.gif" alt="" width="250"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h4><code>[new command]</code></h4>
+<h2>git commit</h2>
+<p>Once you’ve got code you want to keep (i.e. staged) you can commit that change and create a kind of anchor point that you can build from or return to if needed.</p>
+<blockquote>
+<p>ProTip: Don’t forget the -m to add your commit message. If you forget it, git will throw you into VIM and that will ruin your whole day.</p>
+</blockquote>
+<p><img src="./Git, Github & the Terminal, oh my!_files/carbonite.jpg" alt="carbonite"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>Using git commit</h2>
+<p>To commit the new file to your git repo use the command</p>
+<p>git commit -m “&lt; message &gt;”</p>
+<p><br></p>
+<pre><code class="bash">$ git status
+$ git commit -m <span class="string">"Initial commit"</span></code></pre>
+<p><br></p>
+<p></p><blockquote>ProTip: I always like to check my status before I commit just to make sure I’m not committing something I don't want to. If you haven’t noticed, git status is a command you’ll use a lot</blockquote><p></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/create-a-new-file.html" hidden="" class="future" style="top: -20px; display: none;"><h2>create a new file</h2>
+
+<p>Once you have your first commit, you can change or add new files to the project. Let's add a new file to this project called &lt; your-name &gt;.js</p>
+<p> (ex. james.js)</p>
+
+<br>
+
+<p class="terminal"><code>$ touch james.js</code></p>
+
+<br>
+
+<p><code>touch</code> is a command that creates a new file. Just give it the name of the file you want to create (including the extension). </p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h4>Exercise Time!</h4>
+<h2>add and commit again</h2>
+<p>Now that you've added a new file. Add it and commit it to your local repo without help.</p>
+<ol>
+<li>edit the file</li>
+<li>add the change (stage it)</li>
+<li>commit the change</li>
+</ol>
+<p><br></p>
+<p>Bonus: create a new file or directory from the terminal, add that and commit it.</p>
+<p><br></p>
+<p>(As always, if you need help, raise your hand)</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>git log</h2>
+<p>You can look back over the commit history of your project to see who, when, and what someone commited to a repo. To do this you use this command</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/logrolling.gif" alt=""></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>using git log</h2>
+<p>Using this command is very simple.</p>
+<pre><code class="bash">$ git log</code></pre>
+<p>Pressing enter will allow you to see more of the log line by line.</p>
+<p><br></p>
+<p>What is not obvious is how to exit the log. Press <code>Q</code>.</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>your mighty works</h2>
+<p>So what's so great about being able to look back over your history?</p>
+<p><br></p>
+<p>A couple of things:</p>
+<ul>
+<li>You can see when you last touched your codebase</li>
+<li>You can see your old commit messages (may have left a clue as to what to do next)</li>
+<li>It gives you each commit's hash</li>
+</ul>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>commit hash</h2>
+<p>A hash (in computer science) is a fingerprint given to a piece of data to make it uniquely identifiable.</p>
+<p><br></p>
+<p>Whenever you make a commit, git gives it a very long hash that can be used to target it. This will become useful in just a moment.</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/skillet-hash.jpg" width="250"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>git checkout</h2>
+<p>Sometimes you change your mind. Like if you make some changes to a file that you have previously committed and then decide to discard them. You can use the <code>git checkout</code> command to discard any unstaged changes.</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/catjumpbeanbag.gif" alt="cat jumping into a bean bag"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/using-git-checkout.html" hidden="" class="future" style="top: -20px; display: none;"><h2>using git checkout</h2>
+
+<p>Please change me!</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>Awesome, now what</h2>
+<p>So now you know the absolute basics of what you need to manage a repo that lives solely on your computer. Unfortunately, sometimes bad things happen to your computer.</p>
+<p><br></p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/strongbadRuinsComputer.jpg" alt="Strong Bad ruins a computer"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>to the cloud!</h2>
+<p>In order to have one more layer of protection we're going to add our repo to our github account. This will also make it much easier to share and collaborate with other people.</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>to the github!</h2>
+<p>First though, we need to prepare a place for the repo to live. In your web browser go to your github.com profile, log in, and look for the plus sign (+) next to your name in the upper right corner.</p>
+<p>Select 'New Repository'.</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/githubProfile.png" alt="github profile"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>new repo details</h2>
+<p>Name your repo, add a short description and then click 'Create Repository'.</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/newRepo.png" alt=""></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>first push</h2>
+<p>We will actually make use of two new commands here, one of which we will cover, another we will not. Fortunately github gives us these two commands for free.</p>
+<p><br></p>
+<p>After you create the repo find this heading on the repos page. Copy each command and run it in your terminal separately.</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/pushNewRepo.png" alt=""></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h4><code>[new command]</code></h4>
+<h2>git push</h2>
+<p><img src="./Git, Github & the Terminal, oh my!_files/pushit.gif" width="400"></p>
+<p>Sends any committed changes on your local repo to whatever remote repo you have defined</p>
+<p>When you clone a repo it's automatically set to wherever you cloned from. The code given to us by github set it to our new repos destination.</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/using-git-push.html" hidden="" class="future" style="top: -20px; display: none;"><h2>using git push</h2>
+
+<p>Once your changes are committed locally, you can push them up to the remote server where they can be shared.</p>
+
+<br>
+
+<p class="terminal"><code>$ git status</code></p>
+<p class="terminal"><code>$ git push</code></p></section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -20px; display: none;"><h2>git push fail</h2>
+<p>Psych! You probably just got an error and the push failed. Don’t worry. I let that happen to make a point. </p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/catjumpfail2.gif" alt="cat jump fail"></p>
+<p>Here’s why: If the remote repo changes before you push you will have to get your repo back in sync before you can push your changes.</p>
+<p><br></p>
+<p>So let’s learn how!</p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -302px; display: none;"><h2>git pull</h2>
+<p>This command will get any changes made to a defined remote and (try to) merge them with your changes. You must be in sync with the latest changes to a remote before you can push your own stuff.</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/pandaslide.gif" alt="pandas on a slide"></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-html="slides/using-git-pull.html" hidden="" class="future" style="top: -204px; display: none;"><h2>using git pull</h2>
+
+<p>Oh noes! My push didn’t work! It says I am out of sync with the remote. What can I do? No biggie, just do a pull and try again.</p>
+
+<br>
+
+<p class="terminal"><code>$ git status</code></p>
+<p class="terminal"><code>$ git push</code></p>
+</section>
+
+
+                    
+                    
+                
+                    
+                        
+    <section data-markdown="" data-markdown-parsed="true" hidden="" class="future" style="top: -350px; display: none;"><h2>git push fail II: Fail Harder</h2>
+<p>There’s an excellent chance you just got an error and the push failed. Again.</p>
+<p><img src="./Git, Github & the Terminal, oh my!_files/redpandajumpfail.gif" alt="red panda jump fail"></p>
+<p>Because we have a bunch of people trying to push all at once you might have to do several pulls to get completely up-to-date.</p>
+<p><br></p>
+<p>Incidentally, this is why we’re pairing, to cut down on this chaos</p>
+</section>
+
+
+                    
+                    
+                
+            </div>
+
+        <div class="backgrounds"><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background past"></div><div class="slide-background present"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div><div class="slide-background future"></div></div><div class="progress" style="display: block;"><span style="width: 263.661971830986px;"></span></div><aside class="controls" style="display: block;"><div class="navigate-left enabled fragmented"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="slide-number"></div><div class="state-background"></div><div class="pause-overlay"></div></div>
+
+        <script src="./Git, Github & the Terminal, oh my!_files/head.min.js"></script>
+        <script src="./Git, Github & the Terminal, oh my!_files/reveal.min.js"></script>
+        <script>
+            // Configure Reveal
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    // { src: 'bower_components/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                    //{ src: 'bower_components/reveal.js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+
+                    { src: 'js/loadhtmlslides.js', condition: function() { return !!document.querySelector( '[data-html]' ); } }
+                ]
+            });
+        </script><script type="text/javascript" src="./Git, Github & the Terminal, oh my!_files/marked.js"></script><script type="text/javascript" src="./Git, Github & the Terminal, oh my!_files/markdown.js"></script><script type="text/javascript" src="./Git, Github & the Terminal, oh my!_files/loadhtmlslides.js"></script>
+
+    
+<script type="text/javascript">document.write('<script src="' + (location.protocol || 'http:') + '//' + (location.hostname || 'localhost') + ':35729/livereload.js?snipver=1" type="text/javascript"><\/script>')</script><script src="./Git, Github & the Terminal, oh my!_files/livereload.js" type="text/javascript"></script><script type="text/javascript" src="./Git, Github & the Terminal, oh my!_files/highlight.js"></script><script type="text/javascript" src="./Git, Github & the Terminal, oh my!_files/zoom.js"></script><script type="text/javascript" src="./Git, Github & the Terminal, oh my!_files/notes.js"></script>
+
+
+
+</body></html>

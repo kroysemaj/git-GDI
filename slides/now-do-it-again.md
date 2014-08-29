@@ -1,17 +1,22 @@
 #### Exercise Time!
-##  Now do it again!
+##  Time for our first Challenge!
 
-1. Remove the `.git` folder again (remember the flags!)
-2. Reinitialize  git in your project using `git init`
+### Setup:
 
-<br>
+Create a new folder in our class folder
 
-- Bonus: Do it all from the terminal
+```bash
+$ cd .. #navigate up the directory structure one level
+```
 
-- Double Bonus: Do it a couple of more times. Practice makes perfect.
+You should be in the `gdi-git-class` directory, from here. You can check this by using the `pwd` command
 
-<br>
+```bash
+$ pwd #present working directory
+```
 
-Don't be a hero! If you get get stuck, ask for help!
-
-<img src="images/need-help.gif" alt="" width="250">
+You should see something like this...
+```bash
+/Users/jyork/Documents/git/gdi-git-class
+```
+As long as you have that `gdi-git-class` on the end you're in good shape

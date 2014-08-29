@@ -1,9 +1,16 @@
+#### Exercise Time!
 ##  add and commit again
 
-Pop quiz hotshot! Now that you've added a new file. See if you can add and commit it to your local repo without help.
+Now that you've added a new file. Add it and commit it to your local repo without help.
+
+1. edit the file
+2. add the change (stage it)
+3. commit the change
 
 <br>
 
-(Though if you need help, raise your hand) <!-- .element: class="fragment" data-fragment-index="1" -->
+Bonus: create a new file or directory from the terminal, add that and commit it.
 
-![alt text](images/raisehand.gif) <!-- .element: class="fragment" data-fragment-index="1" -->
+<br>
+
+(As always, if you need help, raise your hand)

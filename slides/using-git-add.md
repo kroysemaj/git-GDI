@@ -2,14 +2,14 @@
 
 
 To add a new file to your git repo, you would
-use the git add < filepath > command.
+use the command
+
+`git add < filepath >`
 
 <br>
 
 ```bash
 $ git add index.html
-$ git add jquery-demo.js
-$ git add main.css
 ```
 
 <br>

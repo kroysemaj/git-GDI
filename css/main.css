@@ -9,3 +9,7 @@
 .terminal {
   text-align: left;
 }
+
+code.bash {
+  font-size: 1.5em;
+}
