@@ -6,13 +6,13 @@
 Create a new folder in our class folder
 
 ```bash
-$ cd .. #navigate up the directory structure one level
+$ cd .. #navigate up the directory tree one level
 ```
 
 You should be in the `gdi-git-class` directory, from here. You can check this by using the `pwd` command
 
 ```bash
-$ pwd #present working directory
+$ pwd #print working directory
 ```
 
 You should see something like this...

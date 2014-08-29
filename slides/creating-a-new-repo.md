@@ -16,7 +16,7 @@ cd Documents
 
 <br>
 
-Now create a new directory to house our repo. <!-- .element: class="fragment" data-fragment-index="3" -->
+Now create a new directory for all the projects from this class. <!-- .element: class="fragment" data-fragment-index="3" -->
 ```bash
 mkdir gdi-git-class
 ```

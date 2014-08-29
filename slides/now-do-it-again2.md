@@ -10,4 +10,4 @@
 You have 10 mintues. At the end, we'll have a couple of demos
 
 <br>
-Bonus: Finish fast? Do it one or two more times. Practice makes perfect.
+Bonus: Finish fast? Do it a few more times. Practice makes perfect.

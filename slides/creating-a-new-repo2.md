@@ -8,7 +8,7 @@ $ cd gdi-git-class
 
 <br>
 
-Okay we have a folder for our class but we're going to be making several projects in this class. So let's create another directory for this first project. Then we'll make a file that will be our first project. We'll make a website. The first thing we need is an index page. <!-- .element: class="fragment" data-fragment-index="1" -->
+Okay we have a folder for our class but we're going to be making several projects in this class. So let's create another directory for this first project. Then we'll make a file that will be our first project's source. First let's make an index page. <!-- .element: class="fragment" data-fragment-index="1" -->
 
 ```bash
 $ mkdir init-example
