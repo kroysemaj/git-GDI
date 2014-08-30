@@ -1,8 +1,8 @@
 ##  Using git commit
 
-To commit the new file to your git repo use the command
+So far, we've created and then added a file to our repo. But it hasn't been commited yet. To commit the new file to your git repo use the command
 
-git commit -m “< message >”
+git commit -m “&lt;message&gt;”
 
 <br>
 

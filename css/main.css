@@ -10,6 +10,11 @@
   text-align: left;
 }
 
-code.bash {
+code.bash, code.javascript {
   font-size: 1.5em;
+  line-height: 1em;
+}
+
+.float-left {
+  float: left;
 }

@@ -1,6 +1,6 @@
 ##  setting up our folders
 
-We will create a directory to keep all our work from today. To make sure we all stay together, let's make sure we start from the same place.
+We will create a directory in which to keep all our work from today. To make sure we all stay together, we will start from the same place.
 ```bash
 $ cd ~ #moves us to the HOME directory
 ```

@@ -7,3 +7,6 @@ Removing Git
 "un-gitting-git-demo.md",
 "seeing-the-unseen.md",
 "actually-removing-folders-for-real.md",
+
+Demo
+"demos.md",

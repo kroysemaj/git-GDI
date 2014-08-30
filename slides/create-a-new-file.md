@@ -1,14 +1,24 @@
-##  create a new file
+##  Add a new file to our repo
 
-Once you have created your first commit, you can change or add new files to the project.
-Add a file called < your-name >.js
+You can add new files to the project:
 
-(ex. james.js)
+Let's create a file called &lt;your-name&gt;.js, add it to the repo (stage it), and commit it.
 
 <br>
 ```bash
 $ touch james.js
 ```
-<br>
+Just like before we need to put something in our file: <!-- .element: class="fragment" data-fragment-index="1" -->
+<p class="terminal fragment" data-fragment-index="1"><code>james.js</code></p>
+```javascript
+console.log("James");
+```
+<!-- .element: class="fragment" data-fragment-index="1" -->
 
-`touch` is a command that creates a new file. Just give it the name of the file you want to create (including the extension).
+Then add and commit <!-- .element: class="fragment" data-fragment-index="2" -->
+
+```bash
+$ git add james.js
+$ git commit -m "I added a new file!"
+```
+<!-- .element: class="fragment" data-fragment-index="2" -->

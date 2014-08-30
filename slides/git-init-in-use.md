@@ -7,3 +7,5 @@ To create a new git repo. Run this command in the root directory of your project
 ```bash
 $ git init
 ```
+
+(seriously thats it) <!-- .element: class="fragment" data-fragment-index="1" -->

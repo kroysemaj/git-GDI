@@ -4,5 +4,7 @@ You can check the status of your repo to see that git can see all the files in t
 
 <br/>
 
-`$ git status`
+```bash
+$ git status
+```
 
