@@ -1,5 +1,11 @@
+#### `[new command]`
 ##  git checkout
 
-Sometimes you change your mind. Like if you make some changes to a file that you have previously committed and then decide to discard them. You can use the `git checkout` command to discard any unstaged changes.
+Every commit you make in a repo becomes an anchor point in that project's history. You can revisit these anchor points by 'checking out' that commit.
 
-![cat jumping into a bean bag](images/catjumpbeanbag.gif)
+<br>
+
+Here's how it works. When you run git commit &lt;hash&gt;,
+git copies the snapshot of the referenced commit into your working directory.
+
+

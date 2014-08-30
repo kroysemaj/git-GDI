@@ -9,7 +9,7 @@ use the command
 <br>
 
 ```bash
-$ git add index.html
+$ git add helloWorld.js
 ```
 
 <br>
