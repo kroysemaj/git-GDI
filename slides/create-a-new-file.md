@@ -18,6 +18,7 @@ console.log("James");
 Then add and commit <!-- .element: class="fragment" data-fragment-index="2" -->
 
 ```bash
+$ git status
 $ git add james.js
 $ git commit -m "I added a new file!"
 ```

@@ -4,4 +4,4 @@ This was the way folks used computers for a long, long time. It still works grea
 
 ![alt text](images/badass.gif)
 
-This is how the pros work. We're all pros so this is how we'll work.
+This is how the pros work. We're all pros. So this is how we'll work.

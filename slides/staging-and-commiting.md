@@ -13,5 +13,3 @@ Let's say you are working in a project and you are working with the four differe
 - `blinky.js`
 - `inky.js`
 - `pinky.js`
-- `clyde.js`
-
