@@ -11,4 +11,4 @@ $ git commit -m "changes for blinky and inky"
 $ git add pinky.js
 $ git commit -m "unrelated change to pinky.js"
 ```
-Now you have 3 tidy commits that are all grouped together logically rather than in one lump. By separating staging and commiting, you have greater control over what goes into each commit.
+Now you have 2 tidy commits that are all grouped together logically rather than in one lump. By separating staging and commiting, you have greater control over what goes into each commit.

@@ -8,7 +8,7 @@ When I do, they will look like this:
 
 ```bash
 $ type this into your terminal exactly
-$ also this
+$ also this #not this
 ```
 <br>
 
