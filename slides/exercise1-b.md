@@ -3,6 +3,7 @@
 
 1. Create a new folder called `exercise1` and `cd` into it
 2. Create three new files for your project (put something in them)
+  - at least one file should be in another folder inside `exercise1`
 3. Initialize the project as a new git repo
 4. Add the files so that git will track them
 5. Commit all the files with a message of 'initial commit'
@@ -12,4 +13,4 @@
 9. Add the changes from the final file
 10. Commit it as a separate unit
 
->You have 20 mintues, then we'll take a break. When we come back, you will demo your work to the class!
+>You have 15 mintues, then we'll take a break. When we come back, you will demo your work to the class!

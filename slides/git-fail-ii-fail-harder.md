@@ -1,11 +1,11 @@
-##  git push fail II: Fail Harder
+##  git push fail
 
-There’s an excellent chance you just got an error and the push failed. Again.
+Well that didn't work...
 
-![red panda jump fail](images/redpandajumpfail.gif)
-
-Because we have a bunch of people trying to push all at once you might have to do several pulls to get completely up-to-date.
+![](images/catjumpfail.gif)
 
 <br>
 
-Incidentally, this is why we’re pairing, to cut down on this chaos
+You probably got something that looks like this.
+
+![](images/gitpushfail.png)
