@@ -5,10 +5,12 @@ A git class for Girl Develop It
 
 ###Getting Started
 
+First things first, you have [node][http://nodejs.org].
+
 To install, just clone the project and run
 ```npm install```
 
-and 
+and
 
 ```bower install```
 
