@@ -10,7 +10,7 @@ $ git commit -m "added a file"
 
 Then change the contents of the file:
 
-<p class="terminal"><code>helloWorld.js</code></p>
+<p class="terminal"><code>beatles.js</code></p>
 
 ```javascript
 console.log("Hey Jude");
