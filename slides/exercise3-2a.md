@@ -1,5 +1,5 @@
 #### `Develop It!`
-##  hands-on exercise!
+##  hands-on exercise #2
 
 ### Setup:
 
