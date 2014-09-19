@@ -1,5 +1,10 @@
 ##  using git checkout
 
+Back in our `git-cmd-demos` folder!
+```bash
+$ cd ~/gdi-git/git-cmd-demos
+```
+
 Let's create, add, commit, then change a new file.
 
 ```bash

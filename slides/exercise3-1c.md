@@ -1,5 +1,5 @@
 #### `Develop It!`
-##  practice checkout, reset, and revert
+##  practice checkout again
 
 1. Make another change to file
 2. Save it.
