@@ -8,7 +8,7 @@ This is part of git's philosophy that source control should stay out of your way
 
 <br>
 
-Let's say you are working in a project and you are working with the four different files:
+Let's say you are working in a project and you are working with the three different files:
 
 - `blinky.js`
 - `inky.js`

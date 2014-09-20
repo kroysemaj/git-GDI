@@ -13,4 +13,4 @@
 9. Add the changes from the final file
 10. Commit it as a separate unit
 
->You have 15 mintues, then we'll take a break. When we come back, you will demo your work to the class!
+>15 minutes

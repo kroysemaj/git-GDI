@@ -1,4 +1,7 @@
+#### `[new command]`
 ##  git revert
+
+![](images/oops.gif)
 
 If you need to undo an entire commit. There's a command for that.
 

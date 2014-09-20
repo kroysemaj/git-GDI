@@ -3,7 +3,7 @@
 Using this command is very simple.
 
 ```bash
-$ cd ~/gdi-git #remember to get back into our class project folder
+$ cd ~/gdi-git #back in our class project folder
 $ git log
 ```
 Pressing enter will allow you to see more of the log line by line.

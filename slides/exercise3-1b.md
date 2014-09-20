@@ -8,4 +8,4 @@
 4. Add the file so that git will track them.
 5. Commit the file with a message of 'initial commit'.
 
->3 minutes
+>5 minutes

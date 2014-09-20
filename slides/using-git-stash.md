@@ -1,6 +1,6 @@
 ##  using git stash
 
-When last we left our intrepid heroes they were off checking out old branches. Let's bring them home, make some changes, and stash them to see what happens.
+When last we left our intrepid heroes they were off checking out old commits. Let's bring them home, make some changes, and stash them to see what happens.
 
 ```bash
 $ git checkout master #sets you back to master

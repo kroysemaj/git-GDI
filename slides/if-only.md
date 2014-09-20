@@ -1,6 +1,6 @@
 ##  If only
 
-there was a kind of 'Save Button on Steroids' that could save a project's state at various points and serve as a reliable backup...
+there was a kind of Save Button on Steroids™ that could save a project's state at various points and serve as a reliable backup...
 
 <br>
 
