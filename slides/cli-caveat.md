@@ -1,7 +1,7 @@
 ##  CLI Caveat
 
 ###Windows Users beware!
-These commands are all for Unix / Linux and OSX
+These commands are all for Unix / Linux and OSX.
 
 <br/>
 
