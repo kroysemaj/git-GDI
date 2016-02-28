@@ -1,3 +1,3 @@
 ##  questions?
 
-<img src="images/wat3.gif" width="400">
+<img src="images/wat.gif" width="400">

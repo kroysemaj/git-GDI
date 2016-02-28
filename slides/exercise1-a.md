@@ -1,7 +1,7 @@
 #### `Develop It!`
-##  Time for our first hands-on exercise!
+###  Time for our first hands-on exercise!
 
-### Setup:
+#### `Setup`:
 
 `cd` to our top-level folder for this class
 

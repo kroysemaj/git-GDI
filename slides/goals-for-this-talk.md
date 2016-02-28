@@ -1,5 +1,4 @@
 ##  Goals for this Talk
-
 - Introduce you to the broad concept of version control
 - Install git on every machine here <!-- .element: class="fragment" data-fragment-index="1" -->
 - Remove any fears you have about working with the terminal <!-- .element: class="fragment" data-fragment-index="2" -->

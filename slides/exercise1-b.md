@@ -1,5 +1,5 @@
 #### `Develop It!`
-##  make your own git repo from scratch
+###  make your own git repo from scratch
 
 1. Create a new folder called `exercise1` and `cd` into it
 2. Create three new files for your project (put something in them)

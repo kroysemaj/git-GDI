@@ -7,7 +7,7 @@ Every commit you make in a repo becomes an anchor point in that project's histor
 
 <br>
 
-Here's how it works. When you run git commit &lt;hash&gt;,
+Here's how it works. When you run `git checkout <hash>`,
 git copies the snapshot of the referenced commit into your working directory.
 
 
