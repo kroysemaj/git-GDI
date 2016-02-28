@@ -6,3 +6,4 @@
 - Add a section and exercises about working with branches
 - Aldo about merging
 - Add an exercise that forces them to deal with merge conflicts.
+- Add a section on forking / pull request? (if there's time)
