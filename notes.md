@@ -1,7 +1,4 @@
-- Share this cheat sheet with the class
-  - https://github.com/0nn0/terminal-mac-cheatsheet/wiki/Terminal-Cheatsheet-for-Mac-(-basics-)
-- Add a section and exercises about working with branches
-- Add a section for merging
 - Add a team exercise that forces them to deal with merge conflicts.
-- Add a section on forking / pull request? (if there's time)
+- Add a section and exercises about working with branches / merging
 - Expand the section on command line stuff
+- Add a section on forking / pull request? (if there's time)
