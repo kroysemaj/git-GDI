@@ -3,6 +3,6 @@
 
 
 ### Git, Github & the Terminal
----
+<!-- ---
 ####An afternoon jaunt down Version Control Lane
-
+ -->
