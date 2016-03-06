@@ -29,7 +29,8 @@
         "cli-intro.md",
         "some-necessary-commands.md",
         "yer-hardcore-now.md",
-        "cli-caveat.md"
+        "cli-caveat.md",
+        "terminal-cheatsheet.md"
     ],
     [
         "version-control.md",
