@@ -3,6 +3,27 @@
     "about-the-authors.md",
     "goals-for-this-talk.md",
     [
+        "getting-setup.md",
+        "make-a-github-profile.md",
+        "download-git.md",
+        "test-git.md",
+        "play-along-at-home.md",
+        "git-version.md",
+        "configure-git.md"
+    ],
+    [
+        "setting-up-ssh.md",
+        "generate-ssh-key.md",
+        "add-ssh-key-to-agent.md",
+        "add-ssh-key-to-github.md",
+        "add-ssh-key-to-github-2.md",
+        "add-ssh-key-to-github-3.md",
+        "add-ssh-key-to-github-4.md",
+        "testing-the-ssh-connection.md",
+        "testing-the-ssh-connection-2.md",
+        "testing-the-ssh-connection-3.md"
+    ],
+    [
         "first-things-first.md",
         "the-command-line.md",
         "cli-intro.md",
@@ -31,15 +52,6 @@
         "git-github.md",
         "git-defined.md",
         "github-defined.md"
-    ],
-    [
-        "getting-setup.md",
-        "make-a-github-profile.md",
-        "download-git.md",
-        "test-git.md",
-        "play-along-at-home.md",
-        "git-version.md",
-        "configure-git.md"
     ],
     "pair-up.md",
     [
@@ -198,5 +210,6 @@
     "mindblown.md",
     "how-do-you-feel.md",
     "extra-resources.md",
-    "thank-you.md"
+    "thank-you.md",
+    "add-ssh-key-to-github-4.md"
 ]
