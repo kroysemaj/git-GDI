@@ -197,6 +197,29 @@
         "exercise4-b.md"
     ],
     [
+        "collaborating-with-a-team.md",
+        "working-on-a-team-2.md"
+    ],
+    [
+        "exercise4-a.md",
+        "exercise5-a.md",
+        "exercise5-b.md",
+        "exercise5-c.md"
+    ],
+    [
+        "merge-conflicts.md",
+        "merge-conflicts-2.md",
+        "merge-conflicts-3.md",
+        "merge-conflicts-4.md",
+        "merge-conflicts-5.md",
+        "merge-conflicts-6.md"
+    ],
+    [
+        "exercise6-a.md",
+        "exercise6-b.md",
+        "exercise6-c.md"
+    ],
+    [
         "review.md",
         "review2.md",
         "review3.md",
@@ -211,6 +234,5 @@
     "mindblown.md",
     "how-do-you-feel.md",
     "extra-resources.md",
-    "thank-you.md",
-    "add-ssh-key-to-github-4.md"
+    "thank-you.md"
 ]
