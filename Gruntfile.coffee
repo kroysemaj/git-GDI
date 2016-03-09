@@ -70,6 +70,7 @@ module.exports = (grunt) ->
                         'js/**'
                         'images/**'
                         'css/**'
+                        'fonts/**'
                     ]
                     dest: 'dist/'
                 },{
